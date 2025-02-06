@@ -24,7 +24,7 @@ html(lang='en')
         link(href='css/styles.css', rel='stylesheet')
 
     body#page-top
-
+    
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
@@ -56,7 +56,8 @@ html(lang='en')
                         i.fas.fa-star
                     .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Website Development - Custom Software - Data Analysis
+                p.masthead-subheading.font-weight-light.mb-0 
+                    | Website Development - Custom Software - Data Analysis
 
         // Portfolio Section
         section#portfolio.page-section.portfolio
@@ -184,14 +185,17 @@ html(lang='en')
                 // Contact Section Form
                 .row.justify-content-center
                     .col-lg-8.col-xl-7
-                    p.text-center.mt-4.text-black
-                        a.contact-link(href="callto:334-728-0384")
-                            | (334) 728-0384
-                        br
-                        a.contact-link(href="mailto:contact@chanelmunezero.com")
-                            | contact@chanelmunezero.com
-                    //
-                        form#contactForm
+                        p.text-center.mt-4.text-black
+                            a.contact-link(href="callto:334-728-0384")
+                                | (334) 728-0384
+                            br
+                            a.contact-link(href="mailto:contact@chanelmunezero.com")
+                                | contact@chanelmunezero.com
+                    // Contact Section Form
+                        form#contactForm(
+                            data-sb-form-api-token='API_TOKEN'
+                            submit='handleSubmit(event)'
+                        )
 
                             // Name input
                             .form-floating.mb-3
@@ -255,7 +259,10 @@ html(lang='en')
                                 .text-center.text-danger.mb-3 Error sending message!
 
                             // Submit Button
-                            button#submitButton.btn.btn-primary-black.btn-xl.text-white.disabled(type='submit') Send
+                            button#submitButton.btn.btn-primary-black.btn-xl.disabled(
+                                type='submit'
+                                submit='handleSubmit'
+                            ) Send
 
         // Footer
         footer.footer.text-center
@@ -296,4 +303,4 @@ html(lang='en')
         // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-        // script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

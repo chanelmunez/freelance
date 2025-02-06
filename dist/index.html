@@ -206,13 +206,17 @@
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7"></div>
-                    <p class="text-center mt-4 text-black">
-                        <a class="contact-link" href="callto:334-728-0384">(334) 728-0384</a>
-                        <br />
-                        <a class="contact-link" href="mailto:contact@chanelmunezero.com">contact@chanelmunezero.com</a>
-                    </p>
-                    <!--form#contactForm
+                    <div class="col-lg-8 col-xl-7">
+                        <p class="text-center mt-4 text-black">
+                            <a class="contact-link" href="callto:334-728-0384">(334) 728-0384</a>
+                            <br />
+                            <a class="contact-link" href="mailto:contact@chanelmunezero.com">contact@chanelmunezero.com</a>
+                        </p>
+                    </div>
+                    <!-- Contact Section Formform#contactForm(
+    data-sb-form-api-token='API_TOKEN'
+    submit='handleSubmit(event)'
+)
 
     // Name input
     .form-floating.mb-3
@@ -276,7 +280,10 @@
         .text-center.text-danger.mb-3 Error sending message!
 
     // Submit Button
-    button#submitButton.btn.btn-primary-black.btn-xl.text-white.disabled(type='submit') Send
+    button#submitButton.btn.btn-primary-black.btn-xl.disabled(
+        type='submit'
+        submit='handleSubmit'
+    ) Send
 -->
                 </div>
             </div>
@@ -609,6 +616,6 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

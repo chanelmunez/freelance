@@ -1,0 +1,21 @@
+// 
+// Contact
+// 
+
+#contact {
+    .contact-link {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }    
+}
+
+#contactForm {
+    button {
+        color: $white;
+        background: $primary;
+        &.disabled {
+            color: $white;
+            background: $gray-600;
+        }
+    }
+}

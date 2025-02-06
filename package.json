@@ -39,7 +39,8 @@
         "url": "https://github.com/chanelmunez/freelance.git"
     },
     "dependencies": {
-        "bootstrap": "5.2.3"
+        "bootstrap": "5.2.3",
+        "browserlist": "^1.0.1"
     },
     "devDependencies": {
         "autoprefixer": "10.4.14",
