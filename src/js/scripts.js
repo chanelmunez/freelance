@@ -46,4 +46,38 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Shrink the navbar when page is scrolled
+    const form = document.body.getElementById('contactForm');
+    if (form) {
+        console.log('form found', form);
+        const f = new bootstrap.Form(form);
+        f.addEventListener('submit', async function (event) {
+            //event.preventDefault();
+            console.log('try submitted');
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value; 
+            const phone = document.getElementById('phone').value;
+
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, message, phone }),
+            });
+        
+            try {
+                const result = await response.json();
+                console.log('json result', result);
+                
+            } catch (error) {
+                console.error(error);
+                
+            }
+            console.log('submitted done');
+            //event.stopPropagation();
+        });
+    }
+
 });

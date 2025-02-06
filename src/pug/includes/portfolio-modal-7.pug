@@ -1,0 +1,27 @@
+// Portfolio Modal 7
+#portfolioModal7.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal7', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Grand Rapids AutoGroup Alerts
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/autogroup-alerts.png', alt='Grand Rapids AutoGroup')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | Replaced legacy site with React/Redux and NodeJS for SEO and lead generation.  
+                                | Implemented data solution and dashboard to view, merge and facilitate data sharing across dealerships utilizing AWS.
+                            button.btn.btn-primary(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Close Window

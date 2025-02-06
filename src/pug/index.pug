@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Freelancer - Start Bootstrap Theme
+        title Chanel Munezero's Consulting and Portfolio
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -28,7 +28,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') Chanel Munezero
                 button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu 
                     i.fas.fa-bars
@@ -42,12 +42,13 @@ html(lang='en')
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
 
         // Masthead
-        header.masthead.bg-primary.text-white.text-center
+        header.masthead.bg-black.text-white.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
+                .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
+                    img.masthead-avatar.mb-5(src='assets/img/portfolio/site-logo.png', alt='Chanel Munezero Logo')
                 // Masthead Heading
-                h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
+                h1.masthead-heading.text-uppercase.mb-0 Chanel Munezero
                 // Icon Divider
                 .divider-custom.divider-light
                     .divider-custom-line
@@ -55,7 +56,7 @@ html(lang='en')
                         i.fas.fa-star
                     .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
+                p.masthead-subheading.font-weight-light.mb-0 Website Development - Custom Software - Data Analysis
 
         // Portfolio Section
         section#portfolio.page-section.portfolio
@@ -76,45 +77,67 @@ html(lang='en')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/grooveshark-screen.png', alt='Grooveshark Logo')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/sambatv-logo.png', alt='SambaTV Logo')
                     // Portfolio Item 3
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/addthis-logo.png', alt='AddThis Logo')
                     // Portfolio Item 4
-                    .col-md-6.col-lg-4.mb-5.mb-lg-0
+                    .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/clevertech-logo.png', alt='CleverTech Logo')
                     // Portfolio Item 5
-                    .col-md-6.col-lg-4.mb-5.mb-md-0
+                    .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    // Portfolio Item 6
-                    .col-md-6.col-lg-4
+                            img.img-fluid(src='assets/img/portfolio/soccer-data-analyst.png', alt='Soccer Data Analyst Logo')
+                            //h3.masthead-subheading.font-weight-light.mb-0 Soccer Data Analyst
+                    // Portfolio Item  6
+                    .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/motion-logo-med.png', alt='Motion Industries Logo')
+                    // Portfolio Item 7
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal7')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/autogroup-header.png', alt='Grand Rapids AutoGroup Logo')
+                    // Portfolio Item 8 
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal8')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/getbenjamin-animated.png', alt='GetBenjamin Logo')
+                    // Portfolio Item 9 
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal9')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/prodatamg-logo.png', alt='ProDataMG Logo')
 
         // About Section
-        section#about.page-section.bg-primary.text-white.mb-0
+        section#about.page-section.bg-black.text-white.mb-0
             .container
                 // About Section Heading
                 h2.page-section-heading.text-center.text-uppercase.text-white About
@@ -128,21 +151,30 @@ html(lang='en')
                 .row
                     .col-lg-4.ms-auto
                         p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                            bold Custom Software:
+                            br 
+                            | Tailored solutions that address your specific business needs and challenges.
                     .col-lg-4.me-auto
                         p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
+                            bold Web Development:
+                            br 
+                            | Robust and scalable web applications that enhance your online presence and user engagement.
+                    .col-lg-4.me-auto
+                        p.lead
+                            bold Data Analysis Tools:
+                            br 
+                            | Advanced analytics solutions that provide actionable insights to drive informed decision-making. 
                 // About Section Button
                 .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
+                    a.btn.btn-xl.btn-outline-light(href='https://calendly.com/chanelmunezero/30min')
                         i.fas.fa-download.me-2
-                        | Free Download!
+                        | Schedule A Call!
 
         // Contact Section
         section#contact.page-section
             .container
                 // Contact Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+                h2.page-section-heading.text-center.text-uppercase.text-black.mb-0 Contact Me
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
@@ -152,17 +184,14 @@ html(lang='en')
                 // Contact Section Form
                 .row.justify-content-center
                     .col-lg-8.col-xl-7
-
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-
-                        form#contactForm(data-sb-form-api-token='API_TOKEN')
+                    p.text-center.mt-4.text-black
+                        a.contact-link(href="callto:334-728-0384")
+                            | (334) 728-0384
+                        br
+                        a.contact-link(href="mailto:contact@chanelmunezero.com")
+                            | contact@chanelmunezero.com
+                    //
+                        form#contactForm
 
                             // Name input
                             .form-floating.mb-3
@@ -193,11 +222,8 @@ html(lang='en')
                                 input#phone.form-control(
                                     type='tel',
                                     placeholder='(123) 456-7890',
-                                    data-sb-validations='required'
                                 )
                                 label(for='phone') Phone number
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
 
                             // Message input
                             .form-floating.mb-3
@@ -219,9 +245,6 @@ html(lang='en')
                             #submitSuccessMessage.d-none
                                 .text-center.mb-3
                                     .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
 
                             // Submit error message
                             //
@@ -232,42 +255,24 @@ html(lang='en')
                                 .text-center.text-danger.mb-3 Error sending message!
 
                             // Submit Button
-                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
+                            button#submitButton.btn.btn-primary-black.btn-xl.text-white.disabled(type='submit') Send
 
         // Footer
         footer.footer.text-center
             .container
                 .row
-                    // Footer Location
-                    .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Location
-                        p.lead.mb-0
-                            | 2215 John Daniel Drive
-                            br
-                            | Clark, MO 65243
                     // Footer Social Icons
-                    .col-lg-4.mb-5.mb-lg-0
+                    .col-lg-12.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/chanelmunez')
+                            i.fab.fa-fw.fa-github
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://linkedin.com/in/chanelmunezero')
                             i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-dribbble
-                    // Footer About Text
-                    .col-lg-4
-                        h4.text-uppercase.mb-4 About Freelancer
-                        p.lead.mb-0
-                            | Freelance is a free to use, MIT licensed Bootstrap theme created by 
-                            a(href='http://startbootstrap.com') Start Bootstrap
-                            | .
 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
-                small Copyright &copy; Your Website 2023
+                small Copyright &copy; Chanel Munezero 2025
 
         // Portfolio Modals
         include includes/portfolio-modal-1.pug
@@ -276,6 +281,9 @@ html(lang='en')
         include includes/portfolio-modal-4.pug
         include includes/portfolio-modal-5.pug
         include includes/portfolio-modal-6.pug
+        include includes/portfolio-modal-7.pug
+        include includes/portfolio-modal-8.pug
+        include includes/portfolio-modal-9.pug
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
@@ -288,4 +296,4 @@ html(lang='en')
         // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        // script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

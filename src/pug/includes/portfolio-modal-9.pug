@@ -1,0 +1,28 @@
+// Portfolio Modal 9
+#portfolioModal9.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal9', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 ProDataMG
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/prodatamg-landing.png', alt='ProDataMG')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | Enhanced client relations with better user experience using React, NodeJS and SQL for marketing landing pages
+                                | Improved admin dashboard functionality in ExtJS and NodeJS to increase click-through rate for marketing campaigns
+                                | Developed microservices in PHP to centralize data access controls to SQL and MongoDB
+                            button.btn.btn-primary(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Close Window
