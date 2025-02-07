@@ -191,10 +191,11 @@ html(lang='en')
                             br
                             a.contact-link(href="mailto:contact@chanelmunezero.com")
                                 | contact@chanelmunezero.com
-                    // Contact Section Form
+                    // Form doesn't work w/o way to run server
+                    // TODO: add server
+                        // Contact Section Form
                         form#contactForm(
                             data-sb-form-api-token='API_TOKEN'
-                            submit='handleSubmit(event)'
                         )
 
                             // Name input
@@ -303,4 +304,5 @@ html(lang='en')
         // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        // script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        script(src='js/sb-forms-latest.js')

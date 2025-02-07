@@ -49,8 +49,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Shrink the navbar when page is scrolled
     const form = document.getElementById('contactForm');
     if (form) {
-        console.log('form found', form);
-        form.onSubmit = async function (event) {
+        form.onsubmit = async function (event) {
             event.preventDefault();
             console.log('try submitted');
             const name = document.getElementById('name').value;
@@ -75,12 +74,12 @@ window.addEventListener('DOMContentLoaded', event => {
                 
             }
             console.log('submitted done');
-            //event.stopPropagation();
-        };
+        }
     }
+    /*
     window.handleSubmit = async function handleSubmit(event) {
         //event.preventDefault();
-        console.log('try submitted');
+        console.log('try submitted handle');
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value; 
@@ -107,5 +106,6 @@ window.addEventListener('DOMContentLoaded', event => {
         console.log('submitted done');
         //event.stopPropagation();
     } 
+        */
 
 });
