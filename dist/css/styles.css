@@ -10991,6 +10991,29 @@ html {
     font-size: 1.5rem;
   }
 }
+#about .schedule-btn {
+  background-color: #fff;
+  color: rgba(var(--bs-black-rgb), var(--bs-text-opacity));
+}
+#about .schedule-btn:hover {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+#contact .contact-link {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#contactForm button {
+  color: #fff;
+  background: #1abc9c;
+}
+#contactForm button.disabled {
+  color: #fff;
+  background: #6c757d;
+}
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -11039,18 +11062,4 @@ html {
 
 .copyright {
   background-color: #1a252f;
-}
-
-#contact .contact-link {
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-#contactForm button {
-  color: #fff;
-  background: #1abc9c;
-}
-#contactForm button.disabled {
-  color: #fff;
-  background: #6c757d;
 }
