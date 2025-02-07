@@ -47,8 +47,8 @@ export default function Home() {
               className="masthead-avatar mb-5"
               src="/assets/img/portfolio/site-logo.png"
               alt="Chanel Munezero Logo"
-              width={300}
-              height={300}
+              width={100}
+              height={100}
             />
           </div>
           <h1 className="masthead-heading text-uppercase mb-0">Chanel Munezero</h1>
