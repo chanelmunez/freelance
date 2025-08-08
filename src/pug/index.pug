@@ -38,6 +38,8 @@ html(lang='en')
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Portfolio
                         li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#projects') Projects
+                        li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
@@ -137,6 +139,43 @@ html(lang='en')
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/prodatamg-logo.png', alt='ProDataMG Logo')
+
+        // Projects Section
+        section#projects.page-section.portfolio
+            .container
+                // Projects Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Projects
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // Projects Grid Items
+                .row.justify-content-center
+                    // Project Item 1
+                    .col-md-6.col-lg-4.mb-5
+                        a.portfolio-item.mx-auto(href='http://news.chanelmunezero.com', target='_blank')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/projects/news.png', alt='News Site')
+
+                    // Project Item 2
+                    .col-md-6.col-lg-4.mb-5
+                        a.portfolio-item.mx-auto(href='http://nexus.chanelmunezero.com', target='_blank')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/projects/nexus.png', alt='Nexus Site')
+
+                    // Project Item 3
+                    .col-md-6.col-lg-4.mb-5
+                        a.portfolio-item.mx-auto(href='http://recipe.chanelmunezero.com', target='_blank')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/projects/recipe.png', alt='Recipe Site')
 
         // About Section
         section#about.page-section.bg-black.text-white.mb-0
