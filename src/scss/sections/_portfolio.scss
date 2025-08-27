@@ -11,6 +11,8 @@
         height: 12rem;
         border-radius: $border-radius;
         overflow: hidden;
+        border: 5px solid rgb(44, 62, 80);
+        padding: 5px;
 
         // Responsive sizing
         @include media-breakpoint-up(sm) {
