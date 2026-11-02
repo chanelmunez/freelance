@@ -1,6 +1,6 @@
 /*!
 * Start Bootstrap - Freelance v7.0.7 (https://chanelmunezero.com/)
-* Copyright 2013-2025 Start Bootstrap
+* Copyright 2013-2026 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/freelance/blob/master/LICENSE)
 */
 //
@@ -51,66 +51,46 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Shrink the navbar when page is scrolled
+    // Contact form submission
     const form = document.getElementById('contactForm');
     if (form) {
         form.onsubmit = async function (event) {
             event.preventDefault();
-            console.log('try submitted');
+            event.stopImmediatePropagation();
+
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value; 
+            const message = document.getElementById('message').value;
             const phone = document.getElementById('phone').value;
 
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name, email, message, phone }),
-            });
-        
+            const successMsg = document.getElementById('submitSuccessMessage');
+            const errorMsg = document.getElementById('submitErrorMessage');
+
             try {
-                const result = await response.json();
-                console.log('json result', result);
-                
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name, email, message, phone }),
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    console.log('json result', result);
+                    if (successMsg) successMsg.classList.remove('d-none');
+                    if (errorMsg) errorMsg.classList.add('d-none');
+                    form.reset();
+                } else {
+                    if (errorMsg) errorMsg.classList.remove('d-none');
+                    if (successMsg) successMsg.classList.add('d-none');
+                }
             } catch (error) {
                 console.error(error);
-                
+                if (errorMsg) errorMsg.classList.remove('d-none');
+                if (successMsg) successMsg.classList.add('d-none');
             }
-            console.log('submitted done');
         }
     }
-    /*
-    window.handleSubmit = async function handleSubmit(event) {
-        //event.preventDefault();
-        console.log('try submitted handle');
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value; 
-        const phone = document.getElementById('phone').value;
-        console.log('submitted', name, email, message, phone);
-    
-        try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name, email, message, phone }),
-            });
-            console.log('response', response);
-
-            const result = await response.json();
-            console.log('json result', result);
-            
-        } catch (error) {
-            console.error(error);
-            
-        }
-        console.log('submitted done');
-        //event.stopPropagation();
-    } 
-        */
 
 });

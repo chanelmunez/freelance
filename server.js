@@ -1,10 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 const app = express();
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static('dist'));
+app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Contact form endpoint
 app.post('/api/contact', (req, res) => {
